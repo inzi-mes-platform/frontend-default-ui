@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 // const restTemplate = createRestTemplate();
 
-const PackForwork = (props)=>{
+const PackForWork = (props)=>{
     const location = useLocation();
     const task = location.state!==undefined && location.state!==null ? location.state.task:{};
 
@@ -29,4 +29,4 @@ const PackForwork = (props)=>{
     )
 }
 
-export default PackForwork;
+export default PackForWork;
