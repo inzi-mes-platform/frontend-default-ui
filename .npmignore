@@ -1,0 +1,6 @@
+/public
+/src/*.js
+/src/*.jsx
+/src/*.json
+/webpack.config.js
+/.gitignore
