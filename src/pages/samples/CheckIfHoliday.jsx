@@ -38,7 +38,6 @@ const CheckIfHoliday = (props)=>{
     }
 
     const handleOnButtonClick = ()=>{
-        console.log("@@@@@@@@@@@@@@@@")
         if(task===null || task===undefined) {
             console.log("No task ID identified!")
             return;
@@ -48,9 +47,9 @@ const CheckIfHoliday = (props)=>{
             taskId: task.taskId,
             isHoliday: isHoliday
         }
-        restTemplate.post("http://localhost:8000/do-work/check-if-holiday", params, (reply, error)=>{
-            navigate('/todo-list');
-        });
+        // restTemplate.post("http://localhost:8000/do-work/check-if-holiday", params, (reply, error)=>{
+        //     navigate('/todo-list');
+        // });
     }
 
     return(
@@ -65,6 +64,6 @@ const CheckIfHoliday = (props)=>{
     )
 }
 
-const CheckIfHolidayWithBookmarkEnabler = withBookmarkEnabler(CheckIfHoliday);
+export const CheckIfHolidayWithBookmarkEnabler = withBookmarkEnabler(CheckIfHoliday);
 
 export default CheckIfHolidayWithBookmarkEnabler;

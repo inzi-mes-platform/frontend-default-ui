@@ -45,6 +45,6 @@ const TodoList = (props)=>{
     )
 }
 
-const TodoListWithBookmarkEnabler = withBookmarkEnabler(TodoList);
+export const TodoListWithBookmarkEnabler = withBookmarkEnabler(TodoList);
 
 export default TodoListWithBookmarkEnabler;
