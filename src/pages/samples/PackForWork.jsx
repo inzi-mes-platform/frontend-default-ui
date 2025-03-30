@@ -9,6 +9,8 @@ const PackForWork = (props)=>{
     const location = useLocation();
     const task = location.state!==undefined && location.state!==null ? location.state.task:{};
 
+    console.log("location.pathname==>" + location.pathname);
+    
     const navigate = useNavigate();
 
     const handleOnButtonClick = () => {

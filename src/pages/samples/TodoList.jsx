@@ -1,20 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { createRestTemplate, withBookmarkEnabler } from "inzi-mes-platform-frontend-framework";
 
-// import { createRestTemplate } from "./framework/utils/RestTemplate";
-
-// const restTemplate = createRestTemplate();
+const restTemplate = createRestTemplate();
 
 const TodoList = (props)=>{
-    
+    const { onCurrentPage } = props;
+    const location = useLocation();
     const[todoList, setTodoList] = React.useState([]);
 
+    console.log("location.pathname==>" + JSON.stringify(location));
+
     React.useEffect(()=>{
+        console.log("TodoList 컴포넌트의 useEffect. state=>" + JSON.stringify(location.state));
         // restTemplate.get("http://localhost:8000/todo-list/ispark", (reply, error)=>{
         //     if(error===undefined) {
         //         setTodoList(reply);
         //     }
         // });
+        onCurrentPage({
+            key: "/todo-list",
+            params: {
+                param1: "param1",
+                param2: "param2"
+            }
+        });
+        return (()=>{
+            console.log("exit to do list ui")
+        })
     },[]);
 
     return(
@@ -32,4 +45,6 @@ const TodoList = (props)=>{
     )
 }
 
-export default TodoList;
+const TodoListWithBookmarkEnabler = withBookmarkEnabler(TodoList);
+
+export default TodoListWithBookmarkEnabler;

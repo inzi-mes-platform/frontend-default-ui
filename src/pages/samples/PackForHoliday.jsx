@@ -10,6 +10,7 @@ const PackForHoliday = (props)=>{
     const task = location.state!==undefined && location.state!==null ? location.state.task:{};
 
     console.log("STATE==>"+JSON.stringify(location.state));
+    console.log("location.pathname==>" + location.pathname);
 
     const navigate = useNavigate();
 
