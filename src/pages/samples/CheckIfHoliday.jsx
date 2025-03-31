@@ -20,8 +20,8 @@ const CheckIfHoliday = (props)=>{
     React.useEffect(()=>{
         console.log("check if holiday");
         onCurrentPage({
-            key: "check if holiday",
-            params : {
+            pathName: "/check-if-holiday",
+            state : {
                 param1 : "param1",
                 param2 : "param2"
             }

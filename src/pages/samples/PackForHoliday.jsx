@@ -14,6 +14,10 @@ const PackForHoliday = (props)=>{
 
     const navigate = useNavigate();
 
+    React.useEffect(()=>{
+        console.log("Pack for holiday");
+    }, []);
+
     const handleOnButtonClick = () => {
         if(task===null || task===undefined) {
             console.log("No task ID identified!")

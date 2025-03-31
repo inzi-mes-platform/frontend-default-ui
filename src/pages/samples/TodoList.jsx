@@ -4,7 +4,7 @@ import { createRestTemplate, withBookmarkEnabler } from "inzi-mes-platform-front
 
 const restTemplate = createRestTemplate();
 
-const TodoList = (props)=>{
+export const TodoList = (props)=>{
     const { onCurrentPage } = props;
     const location = useLocation();
     const[todoList, setTodoList] = React.useState([]);
@@ -19,8 +19,8 @@ const TodoList = (props)=>{
         //     }
         // });
         onCurrentPage({
-            key: "/todo-list",
-            params: {
+            pathName: "/todo-list",
+            state: {
                 param1: "param1",
                 param2: "param2"
             }

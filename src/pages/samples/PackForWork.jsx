@@ -13,6 +13,10 @@ const PackForWork = (props)=>{
     
     const navigate = useNavigate();
 
+    React.useEffect(()=>{
+        console.log("pack for work")
+    }, []);
+
     const handleOnButtonClick = () => {
         if(task===null || task===undefined) {
             console.log("No task ID identified!")

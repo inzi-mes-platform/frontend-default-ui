@@ -38,7 +38,8 @@
     "axios": "^1.7.9",
     "re-resizable": "^6.10.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-swipeable-views": "^0.14.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",

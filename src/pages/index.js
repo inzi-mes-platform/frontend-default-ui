@@ -1,17 +1,21 @@
 import {
     CheckIfHoliday,
+    CheckIfHolidayWithBookmarkEnabler,
     Home,
     NotFound,
     PackForHoliday,
     PackForWork,
-    TodoList
+    TodoList,
+    TodoListWithBookmarkEnabler
 } from './samples';
 
 export {
     CheckIfHoliday,
+    CheckIfHolidayWithBookmarkEnabler,
     Home,
     NotFound,
     PackForHoliday,
     PackForWork,
-    TodoList
+    TodoList,
+    TodoListWithBookmarkEnabler
 }
