@@ -6,10 +6,9 @@ import {
     PackForHoliday,
     PackForWork,
     TodoList,
-    TodoListWithBookmarkEnabler
-} from './samples';
-
-import TodoContainer from './todo/TodoContainer';
+    TodoListWithBookmarkEnabler,
+    TodoContainer
+} from './pages';
 
 export {
     CheckIfHoliday,
