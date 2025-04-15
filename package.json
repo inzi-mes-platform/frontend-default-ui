@@ -36,6 +36,7 @@
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.0",
     "axios": "^1.7.9",
+    "inzi-mes-platform-frontend-default-ui-auth": "^1.0.0",
     "inzi-mes-platform-frontend-framework": "^0.0.1",
     "re-resizable": "^6.10.3",
     "react": "^19.0.0",

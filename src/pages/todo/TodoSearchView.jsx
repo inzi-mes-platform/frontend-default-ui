@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { GlobalAlertContext as AlertContext } from 'inzi-mes-platform-frontend-framework';
+
 import SelectableSearchBySearchBar from '../../widgets/bars/SelectableSearchBySearchBar';
 
 import { searchTodo } from './TodoApi';

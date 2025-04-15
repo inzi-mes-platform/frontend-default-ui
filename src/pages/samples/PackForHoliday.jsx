@@ -21,6 +21,7 @@ const PackForHoliday = (props)=>{
     const handleOnButtonClick = () => {
         if(task===null || task===undefined) {
             console.log("No task ID identified!")
+            navigate("/todo-list");
             return;
         }
         // restTemplate.post("http://localhost:8000/do-work/pack-for-holiday/" + task.taskId, {}, (reply, error)=>{
