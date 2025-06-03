@@ -134,7 +134,7 @@ const TodoListTableView = (props) => {
             <div style={{ display: "flex", justifyContent: "end" }}>
                 <TablePagination
                     onPageChange={()=>console.log("") }
-                    page={ 1 }
+                    page={ 0 }
                     rowsPerPage={ 10 }
                     count={ 100 }
                     onRowsPerPageChange={()=>console.log("")}

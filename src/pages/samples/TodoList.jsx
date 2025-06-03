@@ -19,7 +19,6 @@ export const TodoList = (props)=>{
         //     }
         // });
         onCurrentPage({
-            pathName: "/todo-list",
             state: {
                 param1: "param1",
                 param2: "param2"
